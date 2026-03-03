@@ -307,7 +307,7 @@ class Plugin implements PluginInterface
                 $opt = $filter_set->opt_ban;
             }
         }
-        
+
         //检查敏感词汇
         if ($opt == "none" && $filter_set->opt_chk != "none") {
             if (Plugin::check_in($filter_set->words_chk, $comment['text'])) {
